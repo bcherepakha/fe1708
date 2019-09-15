@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Todo App</title>
+    <script defer src="index.js"></script>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <h1>Todo List</h1>
+    <form class="add-task">
+        <input
+            type="checkbox"
+            name="complete_all"
+            aria-label="Complete All">
+        <input
+            type="text"
+            name="task_name"
+            aria-label="What needs to be done?"
+            placeholder="What needs to be done?">
+        <button type="submit">Add task</button>
+    </form>
+    <ul class="todo-list">
+    </ul>
+    <div>
+        <button class="filter" data-type="all">All</button>
+        <button class="filter" data-type="active">Active</button>
+        <button class="filter" data-type="completed">Completed</button>
+    </div>
+</body>
+</html>

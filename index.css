@@ -1,0 +1,12 @@
+.task__description {
+    margin: 0 .35em;
+}
+
+.task.checked .task__description {
+    text-decoration: line-through;
+}
+
+.todo-list.active .task.checked,
+.todo-list.completed .task:not(.checked) {
+    display: none;
+}
