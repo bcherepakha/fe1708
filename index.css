@@ -10,3 +10,38 @@
 .todo-list.completed .task:not(.checked) {
     display: none;
 }
+
+
+.container
+{
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.card
+{
+    flex: 1 1 0;
+}
+
+.card img
+{
+    width: 100%;
+}
+
+
+@media (max-width: 1000px) {
+    .container {
+        flex-wrap: wrap;
+    }
+
+    .card {
+        flex: 0 0 50%;
+    }
+}
+
+@media (max-width: 600px) {
+    .card {
+        flex: 0 0 100%;
+    }
+}
