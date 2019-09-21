@@ -9,6 +9,7 @@
     color: #fff;
     display: block;
     width: 100%;
+    box-sizing: border-box;
 }
 
 .inside {
@@ -23,4 +24,119 @@
     left: 50%;
     top: 50%;
     z-index: 1;
+}
+
+.first,
+.second
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.first .plain,
+.second .colored
+{
+    flex: 0 0 50%;
+}
+
+@media (min-width: 768px) {
+    .fourth,
+    .fifth
+    {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .fourth .colored,
+    .fifth  .colored
+    {
+        flex: 0 0 50%;
+    }
+
+    .fourth .colored:last-child,
+    .fifth  .colored:last-child
+    {
+        flex-grow: 1;
+    }
+}
+
+@media (min-width: 960px) {
+    .third
+    {
+        display: flex;
+    }
+
+    .third .colored
+    {
+        flex: 1 1 0;
+    }
+
+    .fourth .colored
+    {
+        flex: 0 0 35%;
+    }
+
+    .fourth .colored:nth-child(2) {
+        flex-basis: 30%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .third
+    {
+        flex-wrap: wrap;
+    }
+
+    .third .colored
+    {
+        flex: 0 0 50%;
+    }
+
+    .third .colored:last-child
+    {
+        flex-grow: 1;
+    }
+
+    .fifth
+    {
+        justify-content: center;
+    }
+
+    .fifth .colored
+    {
+        flex-basis: 33%;
+    }
+
+    .fifth .colored:last-child
+    {
+        flex-grow: 0;
+    }
+}
+
+@media (min-width: 1800px) {
+    .first .plain
+    {
+        flex: 1 1 0;
+    }
+
+    .third .colored
+    {
+        flex-basis: 25%;
+    }
+
+    .third .colored:last-child
+    {
+        flex-grow: 0;
+    }
+
+    .fourth .colored
+    {
+        flex: 0 0 25%;
+    }
+
+    .fifth .colored
+    {
+        flex: 1 1 0;
+    }
 }
