@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Beer Example</title>
+        <script defer src="beer.js"></script>
+    </head>
+
+    <body>
+
+        <form class="search-beer-by-name">
+            <label>
+                <span>Get part of beer name</span>
+                <input type="text" name="beerName">
+            </label>
+            <button type="submit">Search</button>
+        </form>
+
+        <hr />
+
+        <form class="search-beer-by-food">
+            <label>
+                <span>Get beer for food</span>
+                <select name="food">
+                </select>
+            </label>
+            <button type="submit">Search</button>
+        </form>
+
+        <div id="result"></div>
+
+    </body>
+
+</html>

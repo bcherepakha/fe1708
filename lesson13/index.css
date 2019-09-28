@@ -1,0 +1,50 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    min-height: 400px;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#app {
+  padding: 40px;
+  border: 8px solid lightgreen;
+  border-radius: 20px;
+  flex: 0 1 600px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#clock {
+  font-size: 30px;
+  font-family: arial;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+#alarm-container {
+  padding-bottom: 20px;
+}
+
+.alarm-container__title
+{
+  margin: 0 0 20px;
+}
+
+.alarm-container__body
+{
+  display: flex;
+}
+
+.alarm-container__row:not(:first-child)
+{
+  margin-left: 12px;
+}

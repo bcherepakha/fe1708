@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lesson 13</title>
+    <script defer src="Alarm.js"></script>
+    <script defer src="AddAlarm.js"></script>
+    <script defer src="Clock.js"></script>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div id="app">
+        <div id="clock"></div>
+
+        <form id="alarm-container">
+          <h3 class="alarm-container__title">Set Alarm Time</h3>
+          <div class="alarm-container__body">
+            <div class="alarm-container__row">
+              <label>
+                <select class="alarm-hrs"></select>
+              </label>
+            </div>
+            <div class="alarm-container__row">
+              <label>
+                <select class="alarm-mins"></select>
+              </label>
+            </div>
+            <div class="alarm-container__row">
+              <button type="submit" class="set-alarm">Set Alarm</button>
+            </div>
+          </div>
+        </form>
+
+        <ul id="alarm-list">
+        </ul>
+      </div>
+</body>
+</html>
